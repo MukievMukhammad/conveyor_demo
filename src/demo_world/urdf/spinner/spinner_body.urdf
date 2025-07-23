@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<robot name="screw">
+  <link name="base_link">
+    <inertial>
+      <!-- <origin rpy="0 0.0 0.0" xyz="0 0.1 -0.2"/>s -->
+      <mass value="0.005"/>
+      <inertia ixx="0.000001" ixy="0.0" ixz="0.0" iyy="0.000001" iyz="0.0" izz="0.000001"/>
+    </inertial>
+    <visual>
+      <!-- <origin rpy="0 0.0 1.0" xyz="0 0.0 0.0"/> -->
+      <geometry>
+        <mesh filename="package://demo_world/meshes/spinner_body.dae" scale="0.5 0.5 0.5"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- <origin rpy="0 0.0 1.0" xyz="0 0.0 0.0"/> -->
+      <geometry>
+        <mesh filename="package://demo_world/meshes/spinner_body.dae" scale="0.5 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
+
